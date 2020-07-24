@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>결과</title>
+    </head> 
+    <body>
+        {% if user == com %}
+            <h1>비겼습니다</h1>
+        {% elif com == '가위' and user == '주먹' and user =='보' or com=='보'}
+            <h1>이겼습니다</h1>
+        {% else %} <h1>졌습니다</h1>
+        {% endif %
+        <h3>내가 낸 것 : {{com}}</h3>
+        <a href ="{%url 'home'%}"></a>
+    </body>
+</html>           
